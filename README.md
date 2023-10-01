@@ -4,22 +4,17 @@ It is the server for Sudarshan app which is a cyber security flutter app. It doe
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [WebApp] (#webapp)
-- [Installation WebApp](#installationWebapp)
-- [Usage WebApp](#usageWebapp)
-
 - [Whatsapp-Bot] (#whatsapp-bot)
-- [Installation Bot](#installationBot)
-- [Usage Bot](#usageBot)
+- [Sponsors] (#sponsors)
 
 
 ## Project Overview
 It has been developed to track and maintain criminal database in which we will collect all media files and realtime feed in encrypted format afterwards this will use to compare and find about their existing criminal record.
 <br>
 
-## WebApp
-It is a web page where we can track, view and compare media files using our features
+## WebApp <a name="webapp"></a>
+It is a web page where we can track, view and compare media files using our features-
 
-### Features -
 ### Video Face Tracking
 We need to upload the video and image which contains the person whom we want to track in given video after processing it gives the timestamp in which the same person is detected
 
@@ -29,7 +24,7 @@ In this we need to provide an image of the person which compares every frame of 
 ### Database Face Tracking
 In this we detect or find the person using our database encryption method taken from realtime feed which continuosly encrypts all the camera feeds and stores it in the database.
 
-## Installation WebApp
+## Installation
 To install the project dependencies, run the following commands:
 <br>
 
@@ -45,7 +40,7 @@ cd WebApp/Server
 pip install -r requirements.txt
 ```
 
-## Usage WebApp
+## Usage
 Start the Project by running the following command:
 ```bash
 cd Whatsap-Bot/Client
@@ -53,29 +48,37 @@ cd Whatsap-Bot/Client
 npm start
 ```
 
-## Whatsapp Bot
+## Whatsapp <a name="whatsapp-bot"></a>
 It is developed to instantly get and manage criminal records via whatsapp. It requires a keyword to initiate the bot and login password are used for accessing the bot and then the image is send and the bot responds it by comparing it through existing criminal records(face_encodes, name, crime, station).
 
-## Installation Bot
+## Installation
 To install the project dependencies, run the following commands:
 <br>
 
-Install all the client dependencies
+Install all the nodejs dependencies
 ```bash
 cd Whatsap-Bot/
 npm i
 ```
 
-Install all the server dependencies 
+Install all the python dependencies 
 ```bash
 cd Whatsap-Bot/
 pip install -r requirements.txt
 ```
 
-## Usage Bot
+## Usage
 Start the Project by running the following command:
 ```bash
 cd Whatsap-Bot/Client
 
 npm start
 ```
+
+## Sponsors <a name="sponsors">
+
+### Auth0
+It is used for creating login panels which also provides other platforms login authentication like Google, Github etc.
+
+### Orkes
+It helps in making of API requests more smooth and convenient using its workflows and tasks.
