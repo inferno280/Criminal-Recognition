@@ -258,9 +258,7 @@ def realtimedown():
     while True:
         # Capture frame-by-frame
         for video_capture in captures:
-            print(video_capture)
             video_capture.set(cv2.CAP_PROP_FPS, 1)
-            print(video_capture)
             ret, frame = video_capture.read()
 
             # Convert the frame from BGR color (OpenCV default) to RGB color
@@ -290,7 +288,7 @@ def realtimedown():
                             "../Client/public/assets/realtimeFrames/"+filename, frame)
                         socketio.emit('face_detected_frame', {
                             'frameName': filename})
-                        message("+919926685773", "Person found")
+                        message("+919926685773", "Person found!!! Go check on the website for more details.")
                         framesList.append(filename)
 
                 # Draw a rectangle around the face
@@ -355,7 +353,7 @@ def databaseEncode():
     # known_encoding = face_recognition.face_encodings(known_image)[0]
 
     # Start video capture
-    video_capture = cv2.VideoCapture(0)
+    video_capture = cv2.VideoCapture(2)
 
     # Check if the camera is opened
     if not video_capture.isOpened():

@@ -9,3 +9,4 @@ keyboard>=0.9.0
 flask_socketio>=4.0.0
 mysql.connector>=1.5.0
 mediapipe>=0.10.5
+twilio>=2.0.0

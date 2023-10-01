@@ -1,9 +1,9 @@
 # Criminal Recognition
-It is the server for Sudarshan app which is a cyber security flutter app. It does all the backend functions required for the its full working.
+Tracking Criminal faces using facial recognition and track their suspicious acitivity.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [WebApp] (#webapp)
+- [WebApp] (#webApp)
 - [Whatsapp-Bot] (#whatsapp-bot)
 - [Sponsors] (#sponsors)
 
@@ -75,7 +75,7 @@ cd Whatsap-Bot/Client
 npm start
 ```
 
-## Sponsors <a name="sponsors">
+## Sponsors 
 
 ### Auth0
 It is used for creating login panels which also provides other platforms login authentication like Google, Github etc.

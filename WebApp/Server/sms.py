@@ -8,9 +8,10 @@ from twilio.rest import Client
 def message(to_phone_number, message_body):
     # Your Twilio Account SID and Auth Token (replace with your own)
     account_sid = 'AC11b8477760824169d34cc8ef5e939062'
-    auth_token = '1a4b401ec8e601c24beff480203b1ec4'
+    auth_token = 'a969ce1c3953ba4bc03789aab9ef2482'
 
 # Create a Twilio client
+    print("Hello")
     client = Client(account_sid, auth_token)
 
 # Replace the following values with your own
