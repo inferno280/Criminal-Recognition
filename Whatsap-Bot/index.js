@@ -134,13 +134,13 @@ client.on('message', (msg) => {
             // Initialize a variable to keep track of the number of password attempts
             // Define a function to check the password
             const checkPassword = async (passwordMsg) => {
-              console.log(passwordMsg)
-              const chatId = '919926685773@c.us'; // Replace with the chat ID or phone number of the recipient
-              const filePath = '/home/rajasingh/Downloads/Raja.jpeg';
-              const chat = await client.getChatById(chatId);
-              const image = fs.readFileSync(filePath);
+              // console.log(passwordMsg)
+              // const chatId = '919926685773@c.us'; // Replace with the chat ID or phone number of the recipient
+              // const filePath = '/home/rajasingh/Downloads/Raja.jpeg';
+              // const chat = await client.getChatById(chatId);
+              // const image = fs.readFileSync(filePath);
 
-              msg.rawData(image);
+              // msg.rawData(image);
               // Increment the number of password attempts
               if (passwordMsg.body.toLowerCase() == "cctn@admin")
                 client.sendMessage(msg.from, 'Verification successful').then(() => {

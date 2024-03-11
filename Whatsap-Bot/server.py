@@ -41,7 +41,7 @@ def databaseRead(face_encodings_image):
         host="localhost",
         user="root",
         password="12344321",
-        database="TRACKFLIX"
+        database="whatsap_bot"
         )
 
     # Create a cursor object to execute SQL queries
@@ -88,7 +88,7 @@ def dbwrite(Y, Z, a, b):
         host="localhost",
         user="root",
         password="12344321",
-        database="TRACKFLIX"
+        database="whatsap_bot"
     )
     mycursor = mydb.cursor()
     query = "INSERT INTO criminals (face_encodes, name,crime, additional_info) VALUES ( %s, %s, %s, %s)"
@@ -154,7 +154,7 @@ def dbsearch():
         host="localhost",
         user="root",
         password="12344321",
-        database="TRACKFLIX"
+        database="whatsap_bot"
     )
     mycursor = mydb.cursor()
     mycursor.execute("select face_encodes, name, crime, additional_info from criminals")
