@@ -245,11 +245,16 @@ def realtimedown():
     input_encoding = face_recognition.face_encodings(input_image)[0]
 
     # Define IP addresses and ports of the webcams
+    device1_id = "96371072840007B"
+    device2_id = "SS8TFMKF9PCUAADE"
+    device3_id = "d0800579"
     sources = [
         0,
-        "http://192.168.31.2:8080/video",  # Replace with actual IP addresses
-        "http://192.168.31.2:8080/video",  # Replace with actual IP addresses
-        "http://192.168.31.228:8080/video",  # Replace with actual IP addresses
+        # "http://192.168.31.2:8080/video",  # Replace with actual IP addresses
+        # "http://192.168.31.167:8080/video",  # Replace with actual IP addresses
+        # f'androidv412:/dev/video{device1_id}'
+        # f'androidv412:/dev/video{device2_id}'
+        # f'androidv412:/dev/video{device3_id}'
         # "192.168.31.2",
         # "192.168.31.2"
         # Add more IP addresses as needed
@@ -303,8 +308,8 @@ def realtimedown():
                         frames_lists[i].append(filename)
 
                         # Emit the detected face frame
-                        # socketio.emit('face_detected_frame', {'frameName': filename})
-                        # message("+919926685773", "Person found!!! Go check on the website for more details.")
+                        socketio.emit('face_detected_frame', {'frameName': filename})
+                        message("+919399880247", f"Person found at Camera {i} Go check on the website for more details.")
 
                     # Draw a rectangle around the face
                     cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
@@ -316,7 +321,8 @@ def realtimedown():
             if face_enter_times[i] is not None and len(face_locations) == 0:
                 if face_exit_times[i] is None:
                     face_exit_times[i] = time.ctime()
-                    results_lists[i].append("Face exited at:" + face_exit_times[i])
+                    results_lists[i].append("Face exited at:" +  face_exit_times[i])
+                    # print("Face exited at:" + face_exit_times[i] + "at Camera index:" + i)
 
             frames.append(frame)
 
@@ -352,6 +358,7 @@ def realtimedown():
     cv2.destroyAllWindows()
 
     # Return any collected data
+    print(results_lists)
     response = {
         'message': 'success',
         'timestamps': results_lists,

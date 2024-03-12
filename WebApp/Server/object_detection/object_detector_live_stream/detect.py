@@ -26,7 +26,7 @@ def run(model: str, camera_id: int, width: int, height: int) -> None:
     start_time = time.time()
 
     # Start capturing video input from the camera
-    cap = cv2.VideoCapture(2)
+    cap = cv2.VideoCapture(camera_id)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
 
@@ -98,7 +98,7 @@ def run(model: str, camera_id: int, width: int, height: int) -> None:
     detector.close()
     cap.release()
     cv2.destroyAllWindows()
-
+# /media/rajasgh18/4e01c188-d741-41d8-979d-d7ba57008d94/Coding/Projects/Criminal-Recognition/WebApp/Client/efficientdet_lite.tflite
 
 def main():
     parser = argparse.ArgumentParser(

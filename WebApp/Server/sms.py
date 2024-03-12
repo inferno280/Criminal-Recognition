@@ -7,15 +7,14 @@ from twilio.rest import Client
 
 def message(to_phone_number, message_body):
     # Your Twilio Account SID and Auth Token (replace with your own)
-    account_sid = 'AC11b8477760824169d34cc8ef5e939062'
-    auth_token = 'a969ce1c3953ba4bc03789aab9ef2482'
+    account_sid = 'AC6526169694086340cf325f01418e0583'
+    auth_token = '4d8362b0de847a3145dd6d53a7b52dc3'
 
 # Create a Twilio client
-    print("Hello")
     client = Client(account_sid, auth_token)
 
 # Replace the following values with your own
-    from_phone_number = '+15416528460'
+    from_phone_number = '+14123654034'
 
 # Message to send
 
