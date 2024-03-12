@@ -5,7 +5,6 @@ Tracking Criminal faces using facial recognition and track their suspicious acit
 - [Project Overview](#project-overview)
 - [WebApp] (#webApp)
 - [Whatsapp-Bot] (#whatsapp-bot)
-- [Sponsors] (#sponsors)
 
 
 ## Project Overview
@@ -74,11 +73,3 @@ cd Whatsap-Bot/Client
 
 npm start
 ```
-
-## Sponsors 
-
-### Auth0
-It is used for creating login panels which also provides other platforms login authentication like Google, Github etc.
-
-### Orkes
-It helps in making of API requests more smooth and convenient using its workflows and tasks.
